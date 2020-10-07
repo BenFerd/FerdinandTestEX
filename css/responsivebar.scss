@@ -1,0 +1,36 @@
+@media only screen and (max-width: 900px) {
+  header {
+    width: 120vw;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    .menu,
+    .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+    }
+  }
+  .slogan {
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  .circle {
+    img {
+      width: 100vw;
+    }
+  }
+  .img__header {
+    display: flex;
+    opacity: 50%;
+    #little {
+      height: 10vh;
+    }
+    #big {
+      height: 25vw;
+    }
+  }
+}

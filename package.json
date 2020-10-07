@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/BenFerd/FerdinandTestEX#readme",
   "dependencies": {
+    "compass": "^0.1.1",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0"
   },

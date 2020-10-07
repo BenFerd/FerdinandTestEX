@@ -48,6 +48,30 @@ a {
   .cta:active {
     transform: scale(0.96); }
 
+@media only screen and (max-width: 900px) {
+  header {
+    width: 120vw; }
+  .header {
+    display: flex;
+    flex-direction: column; }
+    .header .menu,
+    .header .user {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem; }
+  .slogan h3 {
+    font-size: 1.5rem; }
+  .circle img {
+    width: 100vw; }
+  .img__header {
+    display: flex;
+    opacity: 50%; }
+    .img__header #little {
+      height: 10vh; }
+    .img__header #big {
+      height: 25vw; } }
+
 @font-face {
   font-family: "markotBold";
   src: url("../fonts/MarkOT-Bold.otf") format("opentype");
@@ -71,52 +95,54 @@ body {
   font-family: "markotBold";
   margin: 0 0 0 0; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 header {
   background-color: #c1dfc4;
-  padding-left: 50px;
   padding-right: 50px;
   display: flex;
   flex-direction: column;
   height: 899px; }
 
 /* NavBar */
-.nav {
+.header {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  .nav .logo {
-    font-size: 5vh; }
-    .nav .logo span {
-      color: #ea5b0c;
-      font-size: 5vh; }
-  .nav .navbar {
-    font-size: 18px; }
-    .nav .navbar ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none; }
-      .nav .navbar ul li {
-        padding-left: 2em; }
-    .nav .navbar .arrow {
-      border: solid #ea5b0c;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 3px;
-      margin-left: 15px;
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg); }
-  .nav .menu {
-    display: flex;
-    font-size: 13px; }
-    .nav .menu .left {
-      font-family: "ailHeavy"; }
-    .nav .menu .right {
-      font-family: "ailReg"; }
-    .nav .menu ul {
-      display: flex;
-      list-style: none; }
-      .nav .menu ul li {
-        padding-left: 2em; }
+  align-items: center;
+  margin-bottom: 100px; }
+
+.header__logo {
+  font-size: 5vh; }
+  .header__logo span {
+    color: #ea5b0c; }
+
+.menu {
+  font-size: 18px; }
+  .menu a {
+    padding: 0 10px; }
+  .menu .arrow {
+    border: solid #ea5b0c;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px; }
+  .user a {
+    margin-right: 1em; }
+  .user .left {
+    font-family: "ailHeavy"; }
+  .user .right {
+    font-family: "ailReg"; }
+  .user .right__border {
+    margin-left: 2em; }
 
 /* header */
 .wrapper {

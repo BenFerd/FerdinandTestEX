@@ -27,70 +27,64 @@ body {
   margin: 0 0 0 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 header {
   background-color: $bgHeader;
-  padding-left: 50px;
   padding-right: 50px;
-
   display: flex;
   flex-direction: column;
   height: 899px;
 }
 /* NavBar */
-.nav {
+.header {
   display: flex;
   justify-content: space-between;
-  align-items: center; // alignement vertical
+  align-items: center;
+  margin-bottom: 100px;
+}
+.header__logo {
+  font-size: 5vh;
 
-  .logo {
-    font-size: 5vh;
-
-    span {
-      color: $orange;
-      font-size: 5vh;
-    }
-  }
-  .navbar {
-    font-size: 18px;
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      li {
-        padding-left: 2em;
-      }
-    }
-    .arrow {
-      border: solid $orange;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 3px;
-      margin-left: 15px;
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-    }
-  }
-  .menu {
-    display: flex;
-    font-size: 13px;
-
-    .left {
-      font-family: "ailHeavy";
-    }
-    .right {
-      font-family: "ailReg";
-    }
-    ul {
-      display: flex;
-      list-style: none;
-      li {
-        padding-left: 2em;
-      }
-    }
+  span {
+    color: $orange;
   }
 }
+.menu {
+  font-size: 18px;
+  a {
+    padding: 0 10px;
+  }
+  .arrow {
+    border: solid $orange;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+}
+.user {
+  display: flex;
+  justify-content: space-between;
 
+  font-size: 13px;
+  a {
+    margin-right: 1em;
+  }
+  .left {
+    font-family: "ailHeavy";
+  }
+  .right {
+    font-family: "ailReg";
+  }
+  .right__border {
+    margin-left: 2em;
+  }
+}
 /* header */
 .wrapper {
   margin-left: 16vw;
@@ -161,5 +155,3 @@ header {
     }
   }
 }
-
-
