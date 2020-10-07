@@ -1,0 +1,175 @@
+a {
+  text-decoration: none;
+  color: black; }
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: -20px; }
+
+.cta {
+  position: relative;
+  align-items: center;
+  z-index: 1;
+  padding: 19px 22px;
+  transition: all 0.2s ease; }
+  .cta:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: block;
+    border-radius: 28px;
+    background: rgba(254, 211, 134, 0.5);
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease; }
+  .cta span {
+    position: relative;
+    font-size: 16px;
+    vertical-align: middle; }
+  .cta img {
+    position: relative;
+    margin-left: 20px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease; }
+  .cta:hover:before {
+    width: 100%;
+    background: #fed386; }
+  .cta:hover img {
+    transform: translateX(0);
+    margin-right: 10px; }
+  .cta:active {
+    transform: scale(0.96); }
+
+@font-face {
+  font-family: "markotBold";
+  src: url("../fonts/MarkOT-Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ailReg";
+  src: url("../fonts/Aileron-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "ailHeavy";
+  src: url("../fonts/Aileron-Heavy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  color: #000000;
+  font-family: "markotBold";
+  margin: 0 0 0 0; }
+
+header {
+  background-color: #c1dfc4;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 899px; }
+
+/* NavBar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav .logo {
+    font-size: 5vh; }
+    .nav .logo span {
+      color: #ea5b0c;
+      font-size: 5vh; }
+  .nav .navbar {
+    font-size: 18px; }
+    .nav .navbar ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none; }
+      .nav .navbar ul li {
+        padding-left: 2em; }
+    .nav .navbar .arrow {
+      border: solid #ea5b0c;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      margin-left: 15px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg); }
+  .nav .menu {
+    display: flex;
+    font-size: 13px; }
+    .nav .menu .left {
+      font-family: "ailHeavy"; }
+    .nav .menu .right {
+      font-family: "ailReg"; }
+    .nav .menu ul {
+      display: flex;
+      list-style: none; }
+      .nav .menu ul li {
+        padding-left: 2em; }
+
+/* header */
+.wrapper {
+  margin-left: 16vw; }
+
+.title {
+  margin-left: -185px; }
+  .title .circle {
+    position: relative;
+    background: #ea5b0c;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%; }
+  .title img {
+    position: absolute;
+    top: 50%;
+    left: 185px;
+    transform: translate(0, -50%); }
+
+.slogan {
+  font-size: 32px; }
+  .slogan h3 {
+    margin-top: -10px; }
+
+.img__header {
+  position: relative;
+  margin-top: -380px;
+  margin-left: 50px; }
+  .img__header #big {
+    padding-bottom: 250px;
+    margin-left: 45vw; }
+  .img__header #little {
+    position: absolute;
+    margin-left: 38vw;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .img__header #circle2 {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    margin-left: 85vw;
+    transform: translate(0, -50%);
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background: #ea5b0c; }
+
+/* Section 1 */
+.section1 h3 {
+  font-size: 32px;
+  margin-left: 16vw;
+  padding-left: 50px;
+  margin-top: 180px; }
+  .section1 h3 span {
+    color: #ea5b0c; }
